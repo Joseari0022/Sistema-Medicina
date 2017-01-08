@@ -12,6 +12,6 @@ namespace Entidades
         [Key]
         public int UsuarioId { get; set; }
         public string Nombres { get; set; }
-        public int Contrasena { get; set; }
+        public string Contrasena { get; set; }
     }
 }

@@ -78,6 +78,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\RegistrosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistrosClientes.Designer.cs">
+      <DependentUpon>RegistrosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistrosProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistrosProveedores.Designer.cs">
+      <DependentUpon>RegistrosProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\RegistroUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistroUsuarios.Designer.cs">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +108,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Registros\RegistrosClientes.resx">
+      <DependentUpon>RegistrosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\RegistrosProveedores.resx">
+      <DependentUpon>RegistrosProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\RegistroUsuarios.resx">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -115,7 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Consultas\" />
-    <Folder Include="Registros\" />
     <Folder Include="Reportes\" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +155,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{137195e8-6e36-4012-8931-332f343bd062}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{27fd58a3-1520-4693-8419-7a8c25478adc}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
